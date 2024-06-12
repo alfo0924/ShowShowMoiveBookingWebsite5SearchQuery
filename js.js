@@ -162,6 +162,47 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+// 在DOMContentLoaded事件监听器中添加以下代码
+
+// 获取日期输入框
+    const dateInput = document.getElementById('date');
+
+// 日期输入框事件监听器
+    dateInput.addEventListener('change', function() {
+        updateSeats();
+    });
+
+// 修改 updateSeats 函数以处理日期更改
+    function updateSeats() {
+        const seatsContainer = document.querySelector(".seats");
+        // 清空现有座位表
+        seatsContainer.innerHTML = "";
+
+        // 重新生成座位表
+        generateSeats();
+        randomSeatSelection();
+    }
+
+// 获取今天的日期
+    const today = new Date();
+// 获取6月20日的日期
+    const endDate = new Date(today.getFullYear(), 5, 20); // Months are zero-based
+
+// 将日期格式化为YYYY-MM-DD
+    const formattedEndDate = endDate.toISOString().split('T')[0];
+
+// 设置日期输入框的最小值为今天，最大值为6月20日
+    dateInput.min = today.toISOString().split('T')[0];
+    dateInput.max = formattedEndDate;
+
+
+
+
+
+
+
+
+
 
 // 获取手机号输入框、预订按钮和显示手机号信息的元素
     const phoneInput = document.getElementById('phone');
