@@ -126,11 +126,11 @@ select, button {
 }
 
 .seat.selected {
-    background-color: #f00;
+    background-color: rgba(0, 0, 255, 0.78);
 }
 
 .seat.randomly-selected {
-    background-color: #707070;
+    background-color: rgba(255, 0, 0, 0.89);
 }
 
 .aisle {
