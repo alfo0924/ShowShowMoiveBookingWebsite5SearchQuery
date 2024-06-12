@@ -19,7 +19,7 @@
     <div class="container-fluid">
         <a class="nav-link active " aria-current="page" href="https://thankful-water-06b9d691e.5.azurestaticapps.net/">SHOWSHOW電影訂票網</a>
         <a class="nav-link active " aria-current="page" href="https://ashy-pebble-0fed7701e.5.azurestaticapps.net/">訂票</a>
-        <a class="nav-link active " aria-current="page" href="#">場次座位查詢</a>
+        <a class="nav-link active " aria-current="page" href="https://calm-mud-0f0baac1e.5.azurestaticapps.net/">場次座位查詢</a>
         <a class="nav-link active " aria-current="page" href="#">會員登入</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -68,10 +68,12 @@
 <!--*//*//-->
 
 <div class="container">
-    <h1>電影訂票介面 </h1>
+    <h1>電影場次座位查詢 </h1>
 
     <form id="bookingForm">
+        <br>
         <label for="movie">選擇電影 :</label>
+        <br>
         <select id="movie" name="movie">
             <option value="movie1">絕地戰警：生死與共</option>
             <option value="movie2">芙莉歐莎：瘋狂麥斯傳奇篇章</option>
@@ -85,39 +87,15 @@
             <option value="time3">下午 4:00 </option>
         </select>
 
-        <label for="combo">加購套餐 (飲料+爆米花)?</label>
-        <select id="combo" name="combo">
-            <option value="no">沒有套餐 </option>
-            <option value="drinks">飲料*1 </option>
-            <option value="popcorn">爆米花*1</option>
-            <option value="hotdog">熱狗*1</option>
-            <option value="churros">吉拿棒*1</option>
-            <option value="small">1號小套餐 (飲料*1, 爆米花*1)</option>
-            <option value="small2">2號小套餐 (飲料*1, 熱狗*1)</option>
-            <option value="small3">3號小套餐 (飲料*1, 吉拿棒*1)</option>
-            <option value="large">1號大套餐 (飲料*2, 爆米花*2)</option>
-            <option value="large2">2號大套餐 (飲料*2, 熱狗*2)</option>
-            <option value="large3">3號大套餐 (飲料*2, 吉拿棒*2)</option>
-        </select>
-
 
 
 
         <div class="screen"><h2>螢幕</h2></div>
         <div class="seats">
-            <h2>座位</h2>
+            <h5>座位</h5>
             <!-- Seats will be dynamically generated here -->
         </div>
 
-        <button type="submit">預訂</button>
-        <button type="button" id="clearButton">清除選項</button> <!-- Added Clear Selection button -->
-        <button type="button" id="paymentButton">付款</button> <!-- Added Payment button -->
-        <label for="phone">手機號碼 :</label>
-        <input type="tel" id="phone" name="phone" required>
-
-    </form>
-
-    <div id="bookingInfo"></div>
 
 
 
